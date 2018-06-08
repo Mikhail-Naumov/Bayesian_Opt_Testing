@@ -106,5 +106,6 @@ Bay finds global optimum, confirms it is global, and searchs for the true.
 - Randomsearching would search the param space randomly.
     - efficient, less thorough, reliant on sufficent iterations
         - stronger in higher dimensional space 
-neither learn from previously selected elements in the parameter space.
+
+*neither learn from previously selected elements in the parameter space.*
 - Bayesian however, does learn from previous elements, and works effectively with increased dimensional space.
