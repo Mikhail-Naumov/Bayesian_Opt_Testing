@@ -84,6 +84,7 @@ Updating process with each aquisition.
 ![bay_15](https://user-images.githubusercontent.com/36013672/41138366-c14907c2-6aae-11e8-9bc2-754d28058157.png)
 
 From 15 points, predicting function
+
 ![grid](https://user-images.githubusercontent.com/36013672/41138351-bb5d08b8-6aae-11e8-8fd1-ecbcfe5bdd3c.png)
 ![random](https://user-images.githubusercontent.com/36013672/41138354-bcf1d276-6aae-11e8-8aa0-f4965a37134a.png)
 ![bay_15](https://user-images.githubusercontent.com/36013672/41138366-c14907c2-6aae-11e8-9bc2-754d28058157.png)
