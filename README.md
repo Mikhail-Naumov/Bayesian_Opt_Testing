@@ -54,3 +54,38 @@
    - Compute the value of f(new_x).
    - Update posterior expectation of f
         - Repeat this process for n_iterations
+  
+  
+## Example Function
+
+![true](https://user-images.githubusercontent.com/36013672/41138347-b7a024ee-6aae-11e8-8b7e-b45bd660d4de.png)
+
+15 points using GridSearch & RandomSearch
+
+![grid](https://user-images.githubusercontent.com/36013672/41138351-bb5d08b8-6aae-11e8-8fd1-ecbcfe5bdd3c.png)
+![random](https://user-images.githubusercontent.com/36013672/41138354-bcf1d276-6aae-11e8-8aa0-f4965a37134a.png)
+
+Generating priors(inital 5)
+
+![bay_5](https://user-images.githubusercontent.com/36013672/41138356-c0ba6102-6aae-11e8-8dd6-f3e1db8ce08c.png)
+
+Updating process with each aquisition.
+*Note the red line maps to the aquisition function on the bottom and refer to the where to look next*
+
+![bay_6](https://user-images.githubusercontent.com/36013672/41138357-c0c9a9dc-6aae-11e8-97ed-99d02f08f03e.png)
+![bay_7](https://user-images.githubusercontent.com/36013672/41138358-c0d58cfc-6aae-11e8-9f76-5d51071d4819.png)
+![bay_8](https://user-images.githubusercontent.com/36013672/41138359-c0e71440-6aae-11e8-888a-d40aa36069cb.png)
+![bay_9](https://user-images.githubusercontent.com/36013672/41138360-c0f5dd18-6aae-11e8-9b23-5a509f72b573.png)
+![bay_10](https://user-images.githubusercontent.com/36013672/41138361-c104613a-6aae-11e8-8781-14f15414d00e.png)
+![bay_11](https://user-images.githubusercontent.com/36013672/41138362-c110e7fc-6aae-11e8-9d5f-e44ffdd1a6af.png)
+![bay_12](https://user-images.githubusercontent.com/36013672/41138363-c11d251c-6aae-11e8-98f9-7f4b93c9c9b4.png)
+![bay_13](https://user-images.githubusercontent.com/36013672/41138364-c12c62d4-6aae-11e8-963e-1047b09d1305.png)
+![bay_14](https://user-images.githubusercontent.com/36013672/41138365-c13b136a-6aae-11e8-85b9-a7d670218d3e.png)
+![bay_15](https://user-images.githubusercontent.com/36013672/41138366-c14907c2-6aae-11e8-9bc2-754d28058157.png)
+
+From 15 points, predicting function
+![grid](https://user-images.githubusercontent.com/36013672/41138351-bb5d08b8-6aae-11e8-8fd1-ecbcfe5bdd3c.png)
+![random](https://user-images.githubusercontent.com/36013672/41138354-bcf1d276-6aae-11e8-8aa0-f4965a37134a.png)
+![bay_15](https://user-images.githubusercontent.com/36013672/41138366-c14907c2-6aae-11e8-9bc2-754d28058157.png)
+![true](https://user-images.githubusercontent.com/36013672/41138347-b7a024ee-6aae-11e8-8b7e-b45bd660d4de.png)
+
