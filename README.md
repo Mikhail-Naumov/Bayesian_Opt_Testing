@@ -32,7 +32,7 @@
     - Looks where a function's **improvement is most likely**
     - Can lead to odd behavior because it relies on the current minimum, rather than the magnatude of possiblity of improvement.
 
-      - **Expected improvement (EI)**
+      - **Expected improvement (EI)** (also MEI?) - should confirm
         - Looks where a function **may most improve**, aka *maximal expected utility*
         - EI(x)=𝔼[max{0,f(x)−f(x̂ )}]
         - Crowd favorite
@@ -43,6 +43,12 @@
       - **Upper Confidence Bound** (UCB)
         - Looks where a function's **improvement is most likely**
         - Looks to exploits possibly uncertainty by finding where the upperbound may be undetermined.
+        
+      - **Maximum probability of improvement** (MPI)
+      
+      - **PMAX**
+      - **IEMAX**
+      - **GP-Hedge**
 
    As to follow the crowd this notebook will use the Expected Improvement function, for reasons I may revisit this notebook to explain.
     
@@ -58,7 +64,7 @@
   
 ## Example Function
 As we will ultimately be looking at hyperparameters, by treating the score or error as a function of the parameters.
-In this case we treat it as an optimization problem for an example function, finding the global minimum (for error).
+In this case we treat it as an optimization problem for an example function, finding the global *minimum* (for error).
 
 ![example eq_1](https://user-images.githubusercontent.com/36013672/41205184-88fddb80-6cbc-11e8-8cbe-c704ecb50a68.png)
 
@@ -116,6 +122,9 @@ Bay finds global optimum, confirms it is global, and searchs for the true.
 
 # 2 Parameters
 ## Example Function
+Again, by treating the score or error as a function of the parameters.
+In this case we treat it as an optimization problem for an example function, finding the global *maximum* (for score).
+In this particular example, there are 2 maximums, which otherwise with grid and random searched would lead to confusion.
 
 ![6_hump_eq](https://user-images.githubusercontent.com/36013672/41205096-48780f50-6cbb-11e8-96de-e0046a23a7c8.png)
 
@@ -155,3 +164,21 @@ Bayesian (25 Points)
 ![camel_25](https://user-images.githubusercontent.com/36013672/41205118-70b0dfd8-6cbb-11e8-94b0-f95f30002d2d.png)
 ![camel_true](https://user-images.githubusercontent.com/36013672/41205098-4ab3428a-6cbb-11e8-8a50-31b00a05651c.png)
 
+Again...
+- Gridsearching would search the param space symetrically and systematically.
+    - thorough, inefficient, uniformity between samples may miss details.
+        - weak in higher dimensional space
+- Randomsearching would search the param space randomly.
+    - efficient, less thorough, reliant on sufficent iterations
+        - stronger in higher dimensional space 
+
+*neither learn from previously selected elements in the parameter space.*
+- Bayesian however, does learn from previous elements, and works effectively with increased dimensional space.
+    #### At 20 aq points with the bayesian map, the theorized model closely resembles the true function, as compared grid & random with 25 points.
+    
+    
+### Resources:
+https://towardsdatascience.com/shallow-understanding-on-bayesian-optimization-324b6c1f7083
+https://thuijskens.github.io/2016/12/29/bayesian-optimisation/
+https://github.com/fmfn/BayesianOptimization
+https://sheffieldml.github.io/GPyOpt/
