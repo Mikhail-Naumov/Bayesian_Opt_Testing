@@ -60,6 +60,8 @@
 As we will ultimately be looking at hyperparameters, by treating the score or error as a function of the parameters.
 In this case we treat it as an optimization problem for an example function, finding the global minimum (for error).
 
+![example eq_1](https://user-images.githubusercontent.com/36013672/41205184-88fddb80-6cbc-11e8-8cbe-c704ecb50a68.png)
+
 ![true](https://user-images.githubusercontent.com/36013672/41138347-b7a024ee-6aae-11e8-8b7e-b45bd660d4de.png)
 
 
@@ -109,3 +111,47 @@ Bay finds global optimum, confirms it is global, and searchs for the true.
 
 *neither learn from previously selected elements in the parameter space.*
 - Bayesian however, does learn from previous elements, and works effectively with increased dimensional space.
+
+
+
+# 2 Parameters
+## Example Function
+
+![6_hump_eq](https://user-images.githubusercontent.com/36013672/41205096-48780f50-6cbb-11e8-96de-e0046a23a7c8.png)
+
+![camel_true](https://user-images.githubusercontent.com/36013672/41205098-4ab3428a-6cbb-11e8-8a50-31b00a05651c.png)
+
+
+### GridSearch & RandomSearch 
+Using 25 points, finding minimums.
+
+![camel_grid](https://user-images.githubusercontent.com/36013672/41205110-62cd2ebc-6cbb-11e8-9ac3-084dc84088be.png)
+![camel_random](https://user-images.githubusercontent.com/36013672/41205111-64d044d8-6cbb-11e8-9c6c-1541aed6079c.png)
+
+### Bayesian Opt
+Generating priors (inital 5)
+
+![camel_5](https://user-images.githubusercontent.com/36013672/41205114-705fc22e-6cbb-11e8-9aee-74857b4c50ee.png)
+
+Updating process with each aquisition.
+*Note the point on the aquisition map and refer to the where to look next*
+
+Bayesian (10 Points)
+![camel_10](https://user-images.githubusercontent.com/36013672/41205115-70734416-6cbb-11e8-9658-8ee3288aa58b.png)
+
+Bayesian (15 Points)
+![camel_15](https://user-images.githubusercontent.com/36013672/41205116-708de474-6cbb-11e8-8fde-4faf37bb8ae6.png)
+
+Bayesian (20 Points) -  At this point, the assumed function is fairly accurate to the true
+![camel_20](https://user-images.githubusercontent.com/36013672/41205117-709dabf2-6cbb-11e8-9156-f48432e44711.png)
+
+Bayesian (25 Points)
+![camel_25](https://user-images.githubusercontent.com/36013672/41205118-70b0dfd8-6cbb-11e8-94b0-f95f30002d2d.png)
+
+### Comparing Methods with 25 points
+
+![camel_grid](https://user-images.githubusercontent.com/36013672/41205110-62cd2ebc-6cbb-11e8-9ac3-084dc84088be.png)
+![camel_random](https://user-images.githubusercontent.com/36013672/41205111-64d044d8-6cbb-11e8-9c6c-1541aed6079c.png)
+![camel_25](https://user-images.githubusercontent.com/36013672/41205118-70b0dfd8-6cbb-11e8-94b0-f95f30002d2d.png)
+![camel_true](https://user-images.githubusercontent.com/36013672/41205098-4ab3428a-6cbb-11e8-8a50-31b00a05651c.png)
+
